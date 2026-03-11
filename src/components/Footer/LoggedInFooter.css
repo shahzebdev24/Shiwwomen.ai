@@ -1,13 +1,11 @@
 .logged-in-footer {
     background-color: #0F4D3F;
     color: #FFFFFF;
-    padding: 60px 24px 24px;
-    min-height: 355px; /* Changed from height to min-height */
-    height: auto; /* Allow height to grow with content */
+    padding: 80px 24px 40px;
+    height: auto;
     box-sizing: border-box;
-    border-top: 1px solid #E3E3E3;
+    border-top: none;
     font-family: 'Inter', sans-serif;
-    margin-top: 0;
     display: flex;
     flex-direction: column;
 }
@@ -206,34 +204,145 @@
 }
 
 @media (max-width: 768px) {
+    .logged-in-footer {
+        padding: 80px 24px 48px;
+        background: linear-gradient(180deg, #0F4D3F 0%, #0a3d32 100%);
+    }
+
     .footer-main-content {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 64px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-brand-section {
+        align-items: center;
         text-align: center;
     }
 
-    .footer-brand-section,
-    .footer-links-col,
-    .footer-newsletter-section {
+    .footer-logo-container {
+        width: 100px;
+        height: 100px;
+        border-radius: 24px;
+        margin-bottom: 24px;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer-tagline {
+        font-size: 16px;
+        line-height: 1.6;
+        opacity: 0.9;
+        max-width: 320px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer-store-badges {
+        margin-top: 32px;
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .footer-store-badge {
+        height: 48px;
+    }
+
+    .footer-links-col {
         align-items: center;
+        width: 100%;
+    }
+
+    .footer-links-col h3 {
+        font-size: 14px;
+        letter-spacing: 3px;
+        margin-bottom: 24px;
+        opacity: 0.8;
         text-align: center;
     }
 
     .footer-nav-list {
+        gap: 20px;
         align-items: center;
     }
 
-    .footer-tagline {
+    .footer-nav-link {
+        font-size: 24px;
+        font-family: 'Playfair Display', serif;
+        font-weight: 500;
+        letter-spacing: 0.02em;
         text-align: center;
-        max-width: 100%;
     }
 
-    .footer-store-badges {
-        justify-content: center;
+    .footer-newsletter-section {
+        width: 100%;
+        max-width: 420px;
+        margin-top: 20px;
+        padding: 48px 24px;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 32px;
+        box-sizing: border-box;
     }
-    
-    .footer-logo-container {
-        margin: 0 auto;
+
+    .footer-newsletter-section h3 {
+        font-size: 14px;
+        letter-spacing: 3px;
+        margin-bottom: 32px;
+        opacity: 0.8;
+        text-align: center;
+    }
+
+    .newsletter-form {
+        gap: 16px;
+    }
+
+    .newsletter-input-group {
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 20px;
+        padding: 18px 24px;
+        align-items: center;
+    }
+
+    .newsletter-input-group label {
+        font-size: 11px;
+        margin-bottom: 4px;
+        opacity: 0.6;
+        text-align: center;
+    }
+
+    .newsletter-input {
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .newsletter-submit-btn {
+        height: 56px;
+        border-radius: 20px;
+        font-size: 20px;
+        font-weight: 600;
+        background-color: #E4A607;
+        color: #0F4D3F;
+        box-shadow: 0 8px 20px rgba(228, 166, 7, 0.15);
+    }
+
+    .footer-bottom-bar {
+        margin-top: 80px;
+        padding-top: 40px;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        width: 100%;
+        text-align: center;
+    }
+
+    .copyright-text {
+        font-size: 13px;
+        opacity: 0.6;
+        line-height: 1.8;
+        text-align: center;
     }
 }
 

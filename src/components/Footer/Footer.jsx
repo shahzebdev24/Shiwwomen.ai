@@ -6,21 +6,13 @@ const Footer = () => {
         <footer className="footer-container">
             <div className="footer-content">
                 <div className="footer-left">
-                    <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="copyright-icon"
-                    >
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <path d="M15 9.354a4 4 0 1 0 0 5.292"></path>
-                    </svg>
-                    <span className="copyright-text">Copyright 2025, All rights reserved</span>
+                    <div className="footer-copyright-wrapper">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="copyright-icon-circle">
+                            <circle cx="12" cy="12" r="9"></circle>
+                            <path d="M14.5 9.2a3.5 3.5 0 1 0 0 5.6"></path>
+                        </svg>
+                        <span className="footer-copyright-text">Copyright 2025, All rights reserved</span>
+                    </div>
                 </div>
                 <div className="footer-right">
                     <a href="#!" className="footer-link">Privacy Policy</a>

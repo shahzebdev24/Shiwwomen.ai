@@ -55,8 +55,7 @@
     flex-direction: column;
     gap: 4px;
     box-sizing: border-box;
-    margin-top: 90px;
-    /* Move sidebar down to align with content heading */
+    margin-top: 0;
 }
 
 

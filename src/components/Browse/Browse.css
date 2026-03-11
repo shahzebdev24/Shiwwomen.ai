@@ -76,10 +76,11 @@
     font-family: 'Inter', sans-serif;
 }
 
-.search-field input[placeholder="I'm looking for ..."] {
-    height: 20px;
+.search-field input {
+    height: 44px;
     padding: 2px 8px;
     box-sizing: border-box;
+    width: 100%;
 }
 
 .search-field input::placeholder {
@@ -284,7 +285,6 @@
 
     .search-field input {
         font-size: 15px;
-        height: 100%;
         width: 100%;
         background: transparent;
         border: none;

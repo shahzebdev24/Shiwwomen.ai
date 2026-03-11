@@ -218,6 +218,107 @@
     font-weight: 700;
 }
 
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    background-color: #FDF9F3;
+    width: 90%;
+    max-width: 450px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: slideUp 0.3s ease;
+    border: 1px solid rgba(228, 166, 7, 0.1);
+}
+
+.modal-icon {
+    color: #0F4D3F;
+    margin-bottom: 24px;
+}
+
+.modal-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 16px;
+}
+
+.modal-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #5B5B5B;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+
+.modal-text strong {
+    color: #0F4D3F;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.modal-btn {
+    padding: 12px 32px;
+    border-radius: 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 130px;
+}
+
+.confirm-btn {
+    background-color: #0F4D3F;
+    color: #E4A607;
+    border: none;
+}
+
+.confirm-btn:hover {
+    background-color: #0c3e33;
+    transform: translateY(-2px);
+}
+
+.cancel-btn {
+    background-color: transparent;
+    border: 1px solid #E4A607;
+    color: #E4A607;
+}
+
+.cancel-btn:hover {
+    background-color: rgba(228, 166, 7, 0.05);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
 @media (max-width: 1100px) {
     .plans-container {
         flex-direction: column;

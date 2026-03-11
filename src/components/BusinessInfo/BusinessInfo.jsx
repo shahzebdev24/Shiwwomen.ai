@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './BusinessInfo.css';
 
 const BusinessInfo = ({ onBack, onNext }) => {
+    const [showModal, setShowModal] = useState(false);
+
+    const handleSave = () => {
+        setShowModal(true);
+        // Removed direct navigation to next page as requested
+    };
+
+    const handleCloseModal = () => {
+        setShowModal(false);
+    };
     return (
         <div className="business-info-page">
             <header className="business-info-header">
@@ -106,16 +116,38 @@ const BusinessInfo = ({ onBack, onNext }) => {
                     </div>
                 </div>
 
-                {/* Next Button */}
+                {/* Save Button */}
                 <div className="next-btn-wrapper">
-                    <button className="next-btn" onClick={onNext}>
-                        Next
+                    <button className="next-btn" onClick={handleSave}>
+                        Save
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                            <polyline points="9 18 15 12 9 6"></polyline>
+                            <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                     </button>
                 </div>
             </div>
+
+            {/* Success Modal */}
+            {showModal && (
+                <div className="modal-overlay" onClick={handleCloseModal}>
+                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                        <div className="modal-icon-success">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h2 className="modal-title">Information Saved!</h2>
+                        <p className="modal-text">
+                            Your business information has been successfully saved. 
+                            Our team will review your details and update your listing shortly.
+                        </p>
+                        <div className="modal-actions">
+                            <button className="modal-btn-primary" onClick={handleCloseModal}>Got it!</button>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };

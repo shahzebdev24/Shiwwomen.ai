@@ -74,11 +74,11 @@ const SelectPlan = ({ onSubscribe }) => {
                             </div>
 
                             <button 
-    className={`subscribe-btn ${plan.isPopular ? 'popular-btn' : 'outline-btn'}`}
-    onClick={onSubscribe}
->
-    Subscribe
-</button>
+                                className={`subscribe-btn ${plan.isPopular ? 'popular-btn' : 'outline-btn'}`}
+                                onClick={onSubscribe}
+                            >
+                                Subscribe
+                            </button>
 
                             <div className="plan-features">
                                 <p className="features-title">Which includes</p>

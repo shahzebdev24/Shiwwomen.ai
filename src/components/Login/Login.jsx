@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Login.css';
 import logo from '../../assets/image.png';
 
-const Login = () => {
+const Login = ({ setCurrentPage, onLogin }) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -77,6 +77,7 @@ const Login = () => {
                         type="button"
                         className={`continue-btn ${isFormFilled ? 'active' : ''}`}
                         disabled={!isFormFilled}
+                        onClick={onLogin}
                     >
                         Continue
                     </button>
