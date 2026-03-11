@@ -50,7 +50,7 @@ const Home = () => {
                 </div>
 
                 <p className="owner-text">
-                    Are you a business owner? <a href="#" className="submit-listing-link">Submit your listing</a>
+                    Are you a business owner? <a href="#!" className="submit-listing-link">Submit your listing</a>
                 </p>
             </div>
 

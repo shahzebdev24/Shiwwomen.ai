@@ -65,7 +65,7 @@ const Login = () => {
                     </div>
 
                     <div className="login-extras">
-                        <a href="#" className="forgot-password">Forgot Password?</a>
+                        <a href="#!" className="forgot-password">Forgot Password?</a>
                     </div>
 
                     <div className="remember-me-container">
@@ -102,7 +102,7 @@ const Login = () => {
                 </div>
 
                 <p className="signup-text">
-                    Don't have an account? <a href="#" className="signup-link">Create account</a>
+                    Don't have an account? <a href="#!" className="signup-link">Create account</a>
                 </p>
             </div>
         </div>

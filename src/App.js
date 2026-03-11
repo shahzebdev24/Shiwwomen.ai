@@ -13,7 +13,7 @@ import Footer from './components/Footer/Footer';
 import LoggedInFooter from './components/Footer/LoggedInFooter';
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true); // Simulating logged in state
+  const [isLoggedIn] = useState(true); // Simulating logged in state
   const [currentPage, setCurrentPage] = useState('home');
   const [selectedBusiness, setSelectedBusiness] = useState(null);
 

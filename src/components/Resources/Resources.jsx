@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Resources.css';
-import detailImg from '../../assets/nourwellnes.jpg';
 import understandingImg1 from '../../assets/understanding.jpg';
 import understandingImg2 from '../../assets/understanding1.jpg';
 import understandingImg3 from '../../assets/understanding2.jpg';

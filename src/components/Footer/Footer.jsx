@@ -23,8 +23,8 @@ const Footer = () => {
                     <span className="copyright-text">Copyright 2025, All rights reserved</span>
                 </div>
                 <div className="footer-right">
-                    <a href="#" className="footer-link">Privacy Policy</a>
-                    <a href="#" className="footer-link">Terms & Conditions</a>
+                    <a href="#!" className="footer-link">Privacy Policy</a>
+                    <a href="#!" className="footer-link">Terms & Conditions</a>
                 </div>
             </div>
         </footer>

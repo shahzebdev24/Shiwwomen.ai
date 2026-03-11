@@ -34,10 +34,10 @@ const LoggedInFooter = () => {
                 <div className="footer-links-col">
                     <h3>COMPANY</h3>
                     <ul className="footer-nav-list">
-                        <li><a href="#" className="footer-nav-link">Home</a></li>
-                        <li><a href="#" className="footer-nav-link">Browse</a></li>
-                        <li><a href="#" className="footer-nav-link">List your Business</a></li>
-                        <li><a href="#" className="footer-nav-link">Blogs & Articles</a></li>
+                        <li><a href="#!" className="footer-nav-link">Home</a></li>
+                        <li><a href="#!" className="footer-nav-link">Browse</a></li>
+                        <li><a href="#!" className="footer-nav-link">List your Business</a></li>
+                        <li><a href="#!" className="footer-nav-link">Blogs & Articles</a></li>
                     </ul>
                 </div>
 
