@@ -1,0 +1,121 @@
+.fav-view-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fav-header {
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.fav-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    width: 100%;
+}
+
+.fav-card {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.fav-image-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1.1;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.fav-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fav-location-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    color: #1a1a1a;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.fav-heart-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    transition: background 0.2s;
+}
+
+.fav-heart-btn:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.fav-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 8px 0;
+}
+
+.fav-card-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #757575;
+    margin: 0 0 16px 0;
+    line-height: 1.5;
+}
+
+.fav-tags {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.fav-tag {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #E4A607;
+}
+
+.fav-tag-separator {
+    width: 4px;
+    height: 4px;
+    background-color: #EAE2D8;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .fav-grid {
+        grid-template-columns: 1fr;
+    }
+}

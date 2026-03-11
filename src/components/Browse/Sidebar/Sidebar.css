@@ -1,0 +1,233 @@
+.filters-sidebar {
+    width: 100%;
+}
+
+.sidebar-card {
+    background-color: #F4ECE3;
+    border-radius: 12px;
+    padding: 24px 14px;
+    border: none;
+    width: 325px;
+    height: 594px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.filters-header {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.filters-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #191919;
+    margin: 0 0 4px;
+    text-align: left;
+}
+
+.filters-header p {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #757575;
+    margin: 0;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.filter-items-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+.filter-item {
+    background-color: #F9F2ED;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 297px;
+    height: 64px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.filter-item.no-bg {
+    background-color: transparent;
+    border: none;
+    padding: 4px 0;
+    align-items: stretch;
+}
+
+.filter-item label {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: #888;
+    margin-bottom: 2px;
+    text-align: left;
+}
+
+.filter-item .distance-label {
+    font-size: 13px;
+    margin-bottom: 8px;
+    color: #757575;
+    text-align: left;
+}
+
+.filter-input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.filter-value {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #191919;
+    text-align: left;
+}
+
+.filter-icon {
+    color: #191919;
+    opacity: 0.7;
+    width: 16px;
+    height: 16px;
+}
+
+/* Custom Range Slider */
+.slider-container {
+    position: relative;
+    padding: 0;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.range-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    background: transparent;
+    height: 6px;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    z-index: 3;
+    margin: 0;
+}
+
+.range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #E4A607;
+    border: 2px solid #E4A607;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 0 3px rgba(228, 166, 7, 0.2);
+    pointer-events: auto;
+}
+
+.range-slider::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: #E4A607;
+    border: 2px solid #E4A607;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 0 3px rgba(228, 166, 7, 0.2);
+    pointer-events: auto;
+}
+
+.slider-track-background {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #FFFFFF;
+    transform: translateY(-50%);
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.slider-track-active {
+    position: absolute;
+    top: 50%;
+    height: 6px;
+    background-color: #E4A607;
+    transform: translateY(-50%);
+    border-radius: 3px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.slider-labels {
+    position: relative;
+    width: 100%;
+    height: 16px;
+    margin-top: 32px;
+}
+
+.slider-labels span {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: #000;
+}
+
+/* Buttons */
+.filter-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.reset-btn {
+    background-color: #FDF9F4;
+    border: 1px solid #E4A607;
+    border-radius: 12px;
+    height: 48px;
+    color: #E4A607;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.reset-btn:hover {
+    background-color: #FFFFFF;
+}
+
+.apply-btn {
+    background-color: #0F4D3F;
+    border: none;
+    border-radius: 12px;
+    height: 48px;
+    color: #E4A607;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.apply-btn:hover {
+    background-color: #0d4337;
+}

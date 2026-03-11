@@ -1,0 +1,277 @@
+/* Page Layout */
+.ups-page {
+    background-color: #FDF9F3;
+    min-height: 100vh;
+    padding: 60px 24px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ups-header {
+    text-align: center;
+    margin-bottom: 48px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.ups-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+}
+
+.ups-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #5B5B5B;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Two-column layout */
+.ups-layout {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    max-width: 1108px; /* 250px sidebar + 834px section + 24px gap */
+    align-items: flex-start;
+}
+
+/* Sidebar */
+.ups-sidebar {
+    width: 250px;
+    flex-shrink: 0;
+    background-color: #F4ECE3;
+    border: 1px solid rgba(228, 166, 7, 0.15);
+    border-radius: 12px;
+    padding: 16px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    box-sizing: border-box;
+}
+
+.ups-menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: none;
+    background: transparent;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #5B5B5B;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    transition: background 0.15s, color 0.15s;
+}
+
+.ups-menu-item:hover {
+    background-color: rgba(228, 166, 7, 0.08);
+    color: #E4A607;
+}
+
+.ups-menu-item.active {
+    color: #E4A607;
+    font-weight: 600;
+}
+
+.ups-menu-icon {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.ups-menu-item.danger {
+    color: #c0392b;
+}
+
+.ups-menu-item.danger:hover {
+    background-color: rgba(192, 57, 43, 0.08);
+    color: #c0392b;
+}
+
+/* Content Area */
+.ups-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-width: 0;
+}
+
+/* Section Card */
+.ups-section {
+    background-color: #F4ECE3;
+    border: 1px solid rgba(228, 166, 7, 0.15);
+    border-radius: 12px;
+    padding: 14px 24px 20px;
+    width: 834px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.ups-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.ups-section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+    text-align: left;
+}
+
+.ups-section-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #888;
+    margin: 0;
+    text-align: left;
+}
+
+/* Action Buttons */
+.ups-action-btns {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.ups-reset-btn {
+    background-color: #F9F2ED;
+    border: 1px solid #E4A607;
+    border-radius: 8px;
+    padding: 0 20px;
+    height: 36px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #E4A607;
+    cursor: pointer;
+    transition: background 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ups-reset-btn:hover {
+    background-color: rgba(228, 166, 7, 0.08);
+}
+
+.ups-save-btn {
+    background-color: #0F4D3F;
+    border: none;
+    border-radius: 8px;
+    padding: 0 24px;
+    height: 36px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #E4A607;
+    cursor: pointer;
+    transition: background 0.15s;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ups-save-btn:hover {
+    background-color: #0c3d32;
+}
+
+/* Form Card inside Section */
+.ups-form-card {
+    background-color: transparent;
+    border-radius: 14px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.ups-form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.ups-form-group {
+    background-color: #F9F2ED;
+    border: 1px solid rgba(228, 166, 7, 0.15);
+    border-radius: 15px;
+    padding: 0px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60px;
+    width: 392px;
+    box-sizing: border-box;
+    gap: 2px;
+}
+
+.ups-form-group.full-width {
+    width: 100%;
+    max-width: 794px; /* 392 + 392 + 10 gap */
+}
+
+.ups-form-group label {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #969696;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.ups-form-group input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a1a;
+    padding: 0;
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .ups-layout {
+        flex-direction: column;
+    }
+
+    .ups-sidebar {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .ups-menu-item {
+        width: auto;
+        flex: 1;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .ups-form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .ups-section-header {
+        flex-direction: column;
+        gap: 12px;
+    }
+}

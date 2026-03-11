@@ -1,0 +1,88 @@
+.add-business-section {
+    width: 100%;
+    max-width: 1160px;
+    margin: 80px auto 60px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.add-business-container {
+    width: 100%;
+    height: 400px;
+    background-image: url('../../assets/Addyourbuisness.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 258px;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.add-business-content {
+    max-width: 650px;
+}
+
+.add-business-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 60px;
+    color: #1a1a1a; /* Darker for readability against yellow */
+    margin: 0 0 16px;
+    letter-spacing: -1px;
+}
+
+.add-business-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0 0 32px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list-business-btn {
+    background-color: #0F4D3F;
+    color: #E4A607;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 32px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(15, 77, 63, 0.2);
+}
+
+.list-business-btn:hover {
+    background-color: #0a362c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(15, 77, 63, 0.3);
+}
+
+@media (max-width: 768px) {
+    .add-business-container {
+        height: auto;
+        padding: 60px 20px;
+    }
+    
+    .add-business-title {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    
+    .add-business-section {
+        margin: 40px 20px;
+    }
+}

@@ -1,0 +1,53 @@
+.biv-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.biv-edit-btn {
+    padding: 0 32px !important;
+}
+
+.biv-data-list {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.biv-data-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(228, 166, 7, 0.1);
+}
+
+.biv-data-row:last-child {
+    border-bottom: none;
+}
+
+.biv-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #969696;
+    font-weight: 400;
+}
+
+.biv-value {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #1a1a1a;
+    font-weight: 600;
+    text-align: right;
+}
+
+@media (max-width: 600px) {
+    .biv-data-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    
+    .biv-value {
+        text-align: left;
+    }
+}
