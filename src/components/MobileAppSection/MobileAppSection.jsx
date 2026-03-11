@@ -17,14 +17,14 @@ const MobileAppSection = () => {
                 </p>
                 
                 <div className="store-buttons">
-                    <a href="#" className="store-link">
+                    <a href="#!" className="store-link">
                         <img 
                             src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" 
                             alt="App Store" 
                             className="store-badge"
                         />
                     </a>
-                    <a href="#" className="store-link">
+                    <a href="#!" className="store-link">
                         <img 
                             src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
                             alt="Google Play" 

@@ -14,21 +14,21 @@ const Header = ({ setCurrentPage, currentPage }) => {
         <div className="header-right-group">
           <nav className="header-nav">
             <a 
-              href="#" 
+              href="#!" 
               className={`nav-link ${currentPage === 'home' ? 'active' : ''}`}
               onClick={(e) => { e.preventDefault(); setCurrentPage('home'); }}
             >
               Home
             </a>
             <a 
-              href="#" 
+              href="#!" 
               className={`nav-link ${currentPage === 'browse' ? 'active' : ''}`}
               onClick={(e) => { e.preventDefault(); setCurrentPage('browse'); }}
             >
               Browse
             </a>
             <a 
-              href="#" 
+              href="#!" 
               className={`nav-link ${currentPage === 'resources' ? 'active' : ''}`}
               onClick={(e) => { e.preventDefault(); setCurrentPage('resources'); }}
             >

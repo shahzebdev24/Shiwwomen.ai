@@ -14,14 +14,14 @@ const LoggedInFooter = () => {
                         ShiaWomen.ai is a dedicated digital space supporting Shia women through connection, guidance, and women-led businesses.
                     </p>
                     <div className="footer-store-badges">
-                        <a href="#" className="footer-store-link">
+                        <a href="#!" className="footer-store-link">
                             <img 
                                 src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" 
                                 alt="App Store" 
                                 className="footer-store-badge"
                             />
                         </a>
-                        <a href="#" className="footer-store-link">
+                        <a href="#!" className="footer-store-link">
                             <img 
                                 src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
                                 alt="Google Play" 
