@@ -175,7 +175,8 @@
 
 .progress-bar-fill {
     position: absolute;
-    left: 203px; /* As per design spec Left: 203px */
+    left: 203px;
+    /* As per design spec Left: 203px */
     width: 157px;
     height: 8px;
     background-color: #0F4D3F;
@@ -192,7 +193,7 @@
     .nearby-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .nearby-title {
         font-size: 32px;
     }

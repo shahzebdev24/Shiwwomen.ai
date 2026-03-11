@@ -65,12 +65,22 @@
 }
 
 /* Row 1: 720px Wide / Rest Narrow */
-.business-card:nth-child(1) { flex: 1 1 720px; }
-.business-card:nth-child(2) { flex: 1 1 300px; }
+.business-card:nth-child(1) {
+    flex: 1 1 720px;
+}
+
+.business-card:nth-child(2) {
+    flex: 1 1 300px;
+}
 
 /* Row 2: Narrow / 720px Wide */
-.business-card:nth-child(3) { flex: 1 1 300px; }
-.business-card:nth-child(4) { flex: 1 1 720px; }
+.business-card:nth-child(3) {
+    flex: 1 1 300px;
+}
+
+.business-card:nth-child(4) {
+    flex: 1 1 720px;
+}
 
 .business-card:hover {
     transform: translateY(-8px);
@@ -154,7 +164,7 @@
         flex: 1 1 100% !important;
         height: 400px;
     }
-    
+
     .card-title {
         font-size: 32px;
         line-height: 40px;

@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-top: -20px; /* Pull content up to align with sidebar */
 }
 
 .fav-header {
@@ -115,6 +116,9 @@
 }
 
 @media (max-width: 768px) {
+    .fav-view-container {
+        margin-top: 0;
+    }
     .fav-grid {
         grid-template-columns: 1fr;
     }

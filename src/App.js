@@ -11,6 +11,7 @@ import BusinessInfo from './components/BusinessInfo/BusinessInfo';
 import UserProfileSettings from './components/UserProfileSettings/UserProfileSettings';
 import Footer from './components/Footer/Footer';
 import LoggedInFooter from './components/Footer/LoggedInFooter';
+import Landing from './components/Landing/Landing';
 
 function App() {
   const [isLoggedIn] = useState(true); // Simulating logged in state
@@ -51,6 +52,10 @@ function App() {
         return <Home />;
     }
   };
+
+  if (currentPage === 'landing') {
+    return <Landing setCurrentPage={setCurrentPage} />;
+  }
 
   return (
     <div className="App">

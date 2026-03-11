@@ -53,8 +53,8 @@
     letter-spacing: -0.04em;
     color: #000000;
     margin: 0 0 24px;
-    width: 1280px;
-    height: 106px;
+    max-width: 100%; /* Changed from width: 1280px */
+    height: auto; /* Changed from height: 106px */
     text-align: left;
 }
 
@@ -304,13 +304,13 @@
 
 @media (max-width: 768px) {
     .res-details-title {
-        font-size: 32px;
+        font-size: 28px;
         width: 100%;
         height: auto;
     }
     
     .related-title {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .related-resource-grid {
@@ -318,12 +318,31 @@
     }
 
     .res-main-image-wrapper {
-        height: 300px;
+        height: 250px;
     }
     
     .res-meta-info {
         flex-direction: column;
         align-items: flex-start;
         gap: 12px;
+    }
+
+    .res-meta-divider {
+        display: none;
+    }
+
+    .res-split-section {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .res-split-image,
+    .res-split-content {
+        width: 100%;
+        flex: none;
+    }
+
+    .res-placeholder-box {
+        height: 240px;
     }
 }

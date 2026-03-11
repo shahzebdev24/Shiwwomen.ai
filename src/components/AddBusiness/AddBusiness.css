@@ -74,15 +74,22 @@
 @media (max-width: 768px) {
     .add-business-container {
         height: auto;
-        padding: 60px 20px;
+        padding: 40px 20px;
     }
     
     .add-business-title {
-        font-size: 36px;
-        line-height: 44px;
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .add-business-subtitle {
+        font-size: 14px;
+        margin-bottom: 24px;
     }
     
     .add-business-section {
-        margin: 40px 20px;
+        margin: 40px 16px;
+        width: calc(100% - 32px);
     }
 }
+

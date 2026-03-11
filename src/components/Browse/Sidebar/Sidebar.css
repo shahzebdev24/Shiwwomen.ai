@@ -7,7 +7,7 @@
     border-radius: 12px;
     padding: 24px 14px;
     border: none;
-    width: 325px;
+    width: 325px; /* Restored desktop fixed width */
     height: 594px;
     box-sizing: border-box;
     display: flex;
@@ -53,7 +53,7 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    width: 297px;
+    width: 297px; /* Restored desktop fixed width */
     height: 64px;
     box-sizing: border-box;
     justify-content: center;
@@ -230,4 +230,19 @@
 
 .apply-btn:hover {
     background-color: #0d4337;
+}
+
+@media (max-width: 1024px) {
+    .sidebar-card {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: auto;
+    }
+    
+    .filter-item {
+        width: 100%;
+        height: auto;
+        min-height: 64px;
+    }
 }
