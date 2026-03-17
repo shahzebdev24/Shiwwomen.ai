@@ -3,7 +3,6 @@ import './FeaturedBusinesses.css';
 import sabrImg from '../../assets/sabr therapy.jpg';
 import maryamImg from '../../assets/maryam_bg.png';
 import beautyImg from '../../assets/beauty_bg.png';
-import abayaImg from '../../assets/abaya_bg.png';
 import image4Img from '../../assets/image4.jpg';
 
 
