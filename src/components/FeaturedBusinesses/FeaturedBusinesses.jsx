@@ -1,8 +1,9 @@
 import React from 'react';
 import './FeaturedBusinesses.css';
 import sabrImg from '../../assets/sabr therapy.jpg';
-import maryamImg from '../../assets/maryam_bg.png';
-import beautyImg from '../../assets/beauty_bg.png';
+import maryamRestroImg from '../../assets/maryamrestro.jpg';
+import beautyImg from '../../assets/alsaleh.jpg';
+import alsalehImg from '../../assets/alsaleh.jpg';
 import image4Img from '../../assets/image4.jpg';
 
 
@@ -18,14 +19,14 @@ const businesses = [
         id: 2,
         title: 'Maryam Restaurant',
         description: "Compassionate, faith-aware mental health support for women.",
-        image: maryamImg,
+        image: maryamRestroImg,
         label: 'Featured Business'
     },
     {
         id: 3,
         title: 'Al Saleh Beauty Saloon',
         description: "Compassionate beauty saloon for amazing women's from all over the globe.",
-        image: beautyImg,
+        image: alsalehImg,
         label: 'Featured Business'
     },
     {

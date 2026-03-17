@@ -20,7 +20,7 @@ const Home = () => {
                 </h1>
 
                 <p className="home-subtitle">
-                    Discover women-led businesses, access faith-aware guidance, and connect within
+                    Discover women-led businesses, access faith-aware guidance, and connect within<br />
                     a safe, community-centered space.
                 </p>
 

@@ -69,13 +69,28 @@
     flex: 1 1 720px;
 }
 
+.business-card:nth-child(1) .card-overlay {
+    background: linear-gradient(90deg, #F4ECE3 0%, #F4ECE3 15%, rgba(244, 236, 227, 0.9) 35%, rgba(244, 236, 227, 0) 70%),
+        linear-gradient(180deg, rgba(244, 236, 227, 0.1) 0%, rgba(244, 236, 227, 0.4) 60%, rgba(244, 236, 227, 0.9) 100%);
+}
+
 .business-card:nth-child(2) {
     flex: 1 1 300px;
+}
+
+.business-card:nth-child(2) .card-overlay {
+    background: linear-gradient(90deg, #F4ECE3 0%, #F4ECE3 15%, rgba(244, 236, 227, 0.9) 35%, rgba(244, 236, 227, 0) 70%),
+        linear-gradient(180deg, rgba(244, 236, 227, 0.1) 0%, rgba(244, 236, 227, 0.4) 60%, rgba(244, 236, 227, 0.9) 100%);
 }
 
 /* Row 2: Narrow / 720px Wide */
 .business-card:nth-child(3) {
     flex: 1 1 300px;
+}
+
+.business-card:nth-child(3) .card-overlay {
+    background: linear-gradient(90deg, #F4ECE3 0%, #F4ECE3 15%, rgba(244, 236, 227, 0.9) 35%, rgba(244, 236, 227, 0) 70%),
+        linear-gradient(180deg, rgba(244, 236, 227, 0.1) 0%, rgba(244, 236, 227, 0.4) 60%, rgba(244, 236, 227, 0.9) 100%);
 }
 
 .business-card:nth-child(4) {
@@ -107,6 +122,14 @@
     transition: transform 0.8s ease;
 }
 
+.business-card:nth-child(2) .business-card-bg img {
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: right center;
+    display: block;
+}
+
 .business-card:hover .business-card-bg img {
     transform: scale(1.05);
 }
@@ -129,7 +152,7 @@
 /* More fade on the left for the 4th card */
 .business-card:nth-child(4) .card-overlay {
     background: linear-gradient(90deg, #F4ECE3 0%, #F4ECE3 15%, rgba(244, 236, 227, 0.9) 35%, rgba(244, 236, 227, 0) 70%),
-                linear-gradient(180deg, rgba(244, 236, 227, 0.1) 0%, rgba(244, 236, 227, 0.4) 60%, rgba(244, 236, 227, 0.9) 100%);
+        linear-gradient(180deg, rgba(244, 236, 227, 0.1) 0%, rgba(244, 236, 227, 0.4) 60%, rgba(244, 236, 227, 0.9) 100%);
 }
 
 .card-label {
