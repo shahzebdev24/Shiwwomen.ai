@@ -4,10 +4,6 @@ import './BusinessInfo.css';
 const BusinessInfo = ({ onBack, onNext }) => {
     const [showModal, setShowModal] = useState(false);
 
-    const handleSave = () => {
-        setShowModal(true);
-        // Removed direct navigation to next page as requested
-    };
 
     const handleCloseModal = () => {
         setShowModal(false);
@@ -131,7 +127,7 @@ const BusinessInfo = ({ onBack, onNext }) => {
                         </div>
                         <h2 className="modal-title">Information Saved!</h2>
                         <p className="modal-text">
-                            Your business information has been successfully saved. 
+                            Your business information has been successfully saved.
                             Our team will review your details and update your listing shortly.
                         </p>
                         <div className="modal-actions">
