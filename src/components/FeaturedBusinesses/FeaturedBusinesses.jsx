@@ -2,7 +2,6 @@ import React from 'react';
 import './FeaturedBusinesses.css';
 import sabrImg from '../../assets/sabr therapy.jpg';
 import maryamRestroImg from '../../assets/maryamrestro.jpg';
-import beautyImg from '../../assets/alsaleh.jpg';
 import alsalehImg from '../../assets/alsaleh.jpg';
 import image4Img from '../../assets/image4.jpg';
 
