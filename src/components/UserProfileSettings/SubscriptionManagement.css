@@ -38,10 +38,12 @@
 }
 
 .sm-plan-name-row h3 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 16px;
-    font-weight: 600;
-    color: #1a1a1a;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.24px;
+    color: #000000;
     margin: 0;
 }
 
@@ -163,9 +165,11 @@
     border: 1px solid #E4A607;
     border-radius: 10px;
     padding: 12px;
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.41px;
     color: #E4A607;
     cursor: pointer;
     transition: background 0.15s;
@@ -177,8 +181,20 @@
 
 .sm-renew-btn {
     padding: 0 24px !important;
+    font-family: 'Playfair Display', serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+    letter-spacing: -0.41px !important;
+    color: #E4A607 !important;
 }
 
 .sm-cancel-btn {
     padding: 0 20px !important;
+    font-family: 'Playfair Display', serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+    letter-spacing: -0.41px !important;
+    color: #E4A607 !important;
 }

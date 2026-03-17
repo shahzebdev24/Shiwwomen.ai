@@ -1,8 +1,8 @@
 import React from 'react';
 import './NearbyBusinesses.css';
-import nourImg from '../../assets/nour_bg.png';
-import alsalehImg from '../../assets/beauty_bg.png';
-import abayaImg from '../../assets/abaya_bg.png';
+import nourImg from '../../assets/image1.jpg';
+import alsalehImg from '../../assets/image2.jpg';
+import abayaImg from '../../assets/image3.jpg';
 
 const nearbyBusinesses = [
     {

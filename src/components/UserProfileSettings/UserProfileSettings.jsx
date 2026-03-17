@@ -148,19 +148,19 @@ const UserProfileSettings = ({ onBack }) => {
                                     <div className="ups-form-row">
                                         <div className="ups-form-group full-width">
                                             <label>Current Password</label>
-                                            <input type="password" defaultValue="Test.19970" />
+                                            <input type="text" defaultValue="Test.19970" />
                                         </div>
                                     </div>
                                     <div className="ups-form-row">
                                         <div className="ups-form-group full-width">
                                             <label>Create new Password</label>
-                                            <input type="password" defaultValue="Test.19970" />
+                                            <input type="text" defaultValue="Test.19970" />
                                         </div>
                                     </div>
                                     <div className="ups-form-row">
                                         <div className="ups-form-group full-width">
                                             <label>Confirm new Password</label>
-                                            <input type="password" defaultValue="Test.19970" />
+                                            <input type="text" defaultValue="Test.19970" />
                                         </div>
                                     </div>
                                 </div>

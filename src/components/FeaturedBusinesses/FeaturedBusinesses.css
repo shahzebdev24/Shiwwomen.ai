@@ -79,7 +79,11 @@
 }
 
 .business-card:nth-child(4) {
-    flex: 1 1 720px;
+    flex: 0 0 586px;
+    height: 330px;
+    border-radius: 15px;
+    border: 1px solid rgba(228, 166, 7, 0.15);
+    background: linear-gradient(180deg, #F4ECE3 0%, rgba(244, 236, 227, 0.05) 100%);
 }
 
 .business-card:hover {
@@ -120,6 +124,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+/* More fade on the left for the 4th card */
+.business-card:nth-child(4) .card-overlay {
+    background: linear-gradient(90deg, #F4ECE3 0%, #F4ECE3 15%, rgba(244, 236, 227, 0.9) 35%, rgba(244, 236, 227, 0) 70%),
+                linear-gradient(180deg, rgba(244, 236, 227, 0.1) 0%, rgba(244, 236, 227, 0.4) 60%, rgba(244, 236, 227, 0.9) 100%);
 }
 
 .card-label {

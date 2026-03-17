@@ -70,10 +70,9 @@
     letter-spacing: -0.41px;
     text-align: center;
     color: #757575;
-    margin: 0 0 40px;
+    margin: 0 auto 40px;
     width: 100%;
     max-width: 636px;
-    min-height: 48px;
 }
 
 .search-container {
